@@ -7,7 +7,14 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    PrimeButton: typeof import('primevue/button')['default']
+    PrimeMenubar: typeof import('primevue/menubar')['default']
+    PrimePanel: typeof import('primevue/panel')['default']
+    PrimeToggleButton: typeof import('primevue/togglebutton')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+  }
+  export interface ComponentCustomProperties {
+    Tooltip: typeof import('primevue/tooltip')['default']
   }
 }
